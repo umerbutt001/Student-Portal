@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="responsive.css"> -->
+</head>
+
+<body>
+
+    <h1>Student Portal</h1>
+
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>fatherName</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th><button onclick="add()"
+                            style="background-color: #B6F500;border: none;width: 20vw;height:30px;">Add
+                            student</button></th>
+                </tr>
+            </thead>
+            <tbody id="show">
+
+            </tbody>
+        </table>
+
+
+    <div id="editPopup" class="popup">
+        <div class="popup-content">
+            <h3>Edit Student</h3>
+            Name:<input type="text" id="editName"><br>
+            Father Name: <input type="text" id="editFatherName"><br>
+            Email: <input type="text" id="editEmail"><br>
+            Phone: <input type="text" id="editPhone"><br>
+            <button onclick="saveEdit()">Save</button>
+            <button onclick="closePopup()">Cancel</button>
+        </div>
+    </div>
+
+
+    <div id="newform" class="form">
+        <div class="form-content">
+            <h3>Add New student data </h3>
+            Name: <input type="text" id="addName"><br>
+            Father Name: <input type="text" id="addFatherName"><br>
+            Email: <input type="text" id="addEmail"><br>
+            Phone: <input type="text" id="addPhone"><br>
+            <button onclick="saveAdd()">Save</button>
+            <button onclick="closeForm()">Cancel</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
